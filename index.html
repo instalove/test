@@ -12,23 +12,15 @@
 </head>
 <body>
 
-<h1>Loading Page....</h1>
+<h1>Please Click the button to load the Page....</h1>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	
-	      <script type="text/javascript">
-         (function($) {
-             $(document).ready(function() {
-                var ua = navigator.userAgent;
-         	var ref = document.referrer;
-             var checker = {
-               one: ua.match(/face/),
-               two: ref.match(/instagram/)
-             };
-             if (checker.two){
-                 window.location.href = 'http://ig-fame.com';
-             }
-             });
-         })(jQuery);
-      </script>
+	      <button id="myButton" class="float-left submit-button" >Click Me!</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "http://ig-fame.com";
+    };
+</script>
 </body></html>
